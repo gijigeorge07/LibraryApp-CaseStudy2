@@ -65,6 +65,7 @@ app.get("/", function (req, res) {
 // Part #1 Point 5
 // port changed from 5000 to 3000 in console
 
-app.listen(3000, () => {
-  console.log("Server Ready on 3000");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log("Server Ready on " + PORT);
 });
